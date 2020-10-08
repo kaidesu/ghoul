@@ -1,0 +1,14 @@
+#!/usr/bin/env php
+<?php
+
+require(dirname(__FILE__).'/../autoload.php');
+
+use Symfony\Component\Console\Application;
+
+$ghoulCommand = new Ghoul\GhoulCommand;
+
+$app = new Application('Ghoul', '0.1.0');
+$app->add($ghoulCommand);
+$app->setDefaultCommand($ghoulCommand->getName(), true);
+
+$app->run();

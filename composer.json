@@ -1,0 +1,22 @@
+{
+    "name": "kaidesu/ghoul",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Shea Lewis (Kai)",
+            "email": "shea.lewis@hey.com"
+        }
+    ],
+    "require": {
+        "symfony/console": "^5.1",
+        "symfony/filesystem": "^5.1"
+    },
+    "bin": [
+        "bin/ghoul"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Ghoul\\": "src"
+        }
+    }
+}
