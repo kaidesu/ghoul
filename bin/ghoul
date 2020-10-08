@@ -7,7 +7,7 @@ use Symfony\Component\Console\Application;
 
 $ghoulCommand = new Ghoul\GhoulCommand;
 
-$app = new Application('Ghoul', '0.1.0');
+$app = new Application('Ghoul', '1.0.0');
 $app->add($ghoulCommand);
 $app->setDefaultCommand($ghoulCommand->getName(), true);
 
