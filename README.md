@@ -1,6 +1,21 @@
 # Ghoul
 Ghoul makes it easy to execute PHP scripts with Composer support without having to configure Composer's autoloader. Focus on the task at hand and freely use Composer dependencies 🎃
 
+## Installing
+Ghoul can be installed globally using Composer:
+
+```
+$ composer global require kaidesu/ghoul
+```
+
+Make sure to place Composer's system-wide vendor bin directory in your $PATH so the ghoul executable can be located by your system. This directory exists in different locations based on your operating system; however, some common locations include:
+
+- macOS: `$HOME/.composer/vendor/bin`
+- Windows: `%USERPROFILE%\AppData\Roaming\Composer\vendor\bin`
+- GNU / Linux Distributions: `$HOME/.config/composer/vendor/bin` or `$HOME/.composer/vendor/bin`
+
+You could also find the composer's global installation path by running composer global about and looking up from the first line.
+
 ## Usage
 ```
 $ ghoul <path>
